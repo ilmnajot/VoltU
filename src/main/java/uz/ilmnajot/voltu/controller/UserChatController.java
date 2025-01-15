@@ -10,4 +10,7 @@ public class UserChatController {
 
     private final UserChatService userChatService;
 
+    public UserChatController(UserChatService userChatService) {
+        this.userChatService = userChatService;
+    }
 }

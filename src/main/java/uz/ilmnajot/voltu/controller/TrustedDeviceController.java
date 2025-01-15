@@ -10,4 +10,9 @@ import uz.ilmnajot.voltu.service.TrustedDeviceService;
 public class TrustedDeviceController {
     private final TrustedDeviceService trustedDeviceService;
 
+    public TrustedDeviceController(TrustedDeviceService trustedDeviceService) {
+        this.trustedDeviceService = trustedDeviceService;
+    }
+
+
 }

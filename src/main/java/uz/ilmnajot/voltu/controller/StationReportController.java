@@ -10,4 +10,7 @@ import uz.ilmnajot.voltu.service.StationReportService;
 public class StationReportController {
     private final StationReportService stationReportService;
 
+    public StationReportController(StationReportService stationReportService) {
+        this.stationReportService = stationReportService;
+    }
 }

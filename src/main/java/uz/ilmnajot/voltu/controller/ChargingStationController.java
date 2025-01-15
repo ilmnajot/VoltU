@@ -10,4 +10,7 @@ import uz.ilmnajot.voltu.service.ChargingStationService;
 public class ChargingStationController {
     private final ChargingStationService chargingStationService;
 
+    public ChargingStationController(ChargingStationService chargingStationService) {
+        this.chargingStationService = chargingStationService;
+    }
 }

@@ -1,7 +1,6 @@
 package uz.ilmnajot.voltu.model.request;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import uz.ilmnajot.voltu.enums.UserRole;
 
 @Setter
@@ -16,4 +15,5 @@ public class AuthDTO {
     private Double balance;
     private UserRole userRole;
     private boolean blocked;
+    private String deviceName;
 }

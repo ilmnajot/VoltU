@@ -10,4 +10,7 @@ public class PortController {
 
     private final PortService portService;
 
+    public PortController(PortService portService) {
+        this.portService = portService;
+    }
 }

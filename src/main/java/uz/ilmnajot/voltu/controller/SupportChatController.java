@@ -10,4 +10,7 @@ public class SupportChatController {
 
     private final SupportChatService supportChatService;
 
+    public SupportChatController(SupportChatService supportChatService) {
+        this.supportChatService = supportChatService;
+    }
 }

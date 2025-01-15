@@ -6,4 +6,6 @@ import uz.ilmnajot.voltu.entity.TrustedDevice;
 
 @Repository
 public interface TrustedDeviceRepository extends JpaRepository<TrustedDevice, Long> {
+
+    TrustedDevice findByUserIdAndDeviceName(Long userId, String deviceName);
 }

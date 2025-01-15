@@ -9,4 +9,8 @@ import uz.ilmnajot.voltu.service.AccountantService;
 public class AccountantController {
 
     private final AccountantService accountantService;
+
+    public AccountantController(AccountantService accountantService) {
+        this.accountantService = accountantService;
+    }
 }

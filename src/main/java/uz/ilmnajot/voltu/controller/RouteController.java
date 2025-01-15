@@ -11,4 +11,7 @@ public class RouteController {
 
     private final RouteService routeService;
 
+    public RouteController(RouteService routeService) {
+        this.routeService = routeService;
+    }
 }

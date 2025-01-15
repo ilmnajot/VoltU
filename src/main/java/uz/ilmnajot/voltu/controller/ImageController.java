@@ -9,4 +9,7 @@ import uz.ilmnajot.voltu.service.ImageService;
 public class ImageController {
     private final ImageService imageService;
 
+    public ImageController(ImageService imageService) {
+        this.imageService = imageService;
+    }
 }

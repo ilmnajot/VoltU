@@ -13,12 +13,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Entity(name = "station_report")
 @Builder
-@Table(
-        name = "station_reports",
-        indexes = {@Index(
-                name = "idx_station_report_date",
-                columnList = "stationId, reportDate")
-        })
+
 public class StationReport extends BaseAbsEntity {
     private Long stationId;
     private Double totalIncome;

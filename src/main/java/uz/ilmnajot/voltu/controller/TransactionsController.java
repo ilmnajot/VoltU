@@ -9,4 +9,7 @@ import uz.ilmnajot.voltu.service.TransactionService;
 public class TransactionsController {
     private final TransactionService transactionService;
 
+    public TransactionsController(TransactionService transactionService) {
+        this.transactionService = transactionService;
+    }
 }
