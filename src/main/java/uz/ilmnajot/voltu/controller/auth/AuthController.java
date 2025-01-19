@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import uz.ilmnajot.voltu.model.common.ApiResponse;
 import uz.ilmnajot.voltu.model.request.AuthDTO;
+import uz.ilmnajot.voltu.model.request.LoginDTO;
+import uz.ilmnajot.voltu.model.request.VerifyDTO;
 import uz.ilmnajot.voltu.service.auth.AuthService;
 
 @RestController
@@ -19,7 +21,17 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ApiResponse register(@RequestBody AuthDTO authDTO){
-        return authService.register(authDTO);
+    public ApiResponse register(@RequestBody AuthDTO authDTO) {
+        return this.authService.register(authDTO);
+    }
+
+    @PostMapping("/verify")
+    public ApiResponse verify(@RequestBody VerifyDTO verifyDTO) {
+        return this.authService.verifyBySms(verifyDTO);
+    }
+
+    @PostMapping("/login")
+    public ApiResponse login(@RequestBody LoginDTO loginDTO) {
+        return this.authService.login(loginDTO);
     }
 }

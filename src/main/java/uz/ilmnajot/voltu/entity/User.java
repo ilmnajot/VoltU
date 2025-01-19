@@ -27,7 +27,7 @@ public class User extends BaseAbsEntity implements UserDetails {
     @Enumerated(EnumType.STRING)
     private UserRole userRole;
     private boolean blocked;
-    //    private Long chatId;
+    private Long chatId;
 
     @ManyToMany
     @JoinTable(name = "users_images",
